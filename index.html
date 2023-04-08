@@ -1,0 +1,31 @@
+<!DOCTYPE html>                      
+<html lang="en">                      
+<head>                                
+    <meta charset="UTF-8">           
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <title>Sample ChatGPT AI Application</title>  
+    <link rel="stylesheet" href="interface.css"> <!-- The link to an external style sheet that defines the look and feel of the HTML document -->
+</head>                               <!-- The end of the head section of the HTML document -->
+<body>                                <!-- The start of the body section of the HTML document -->
+
+    <h1><center>ChatGPT</center></h1>   <!-- A heading that displays the name of the chatbot in the center of the page -->
+
+    <div id="UserInputWrapper">         <!-- A div element that wraps the user input label and text -->
+        <h2 id="UserInputLabel">Message :</h2>  <!-- A label for user input -->
+        <h2 id="UserInputText"></h2>    <!-- An empty space where the user input will be displayed -->
+    </div>
+
+    <div id="ResponseWrapper">          <!-- A div element that wraps the response label and text -->
+        <h2 id="ResponseLabel">AI Bot :</h2>  <!-- A label for chatbot response -->
+        <h2 id="ResponseText"></h2>     <!-- An empty space where the chatbot response will be displayed -->
+    </div>
+
+    <div id="ButtonWrapper">            <!-- A div element that wraps the input box and enter button -->
+        <input id="InputBox" type="text" placeholder=" Send a message..." onkeydown="" autofocus>  <!-- An input box for user to enter text -->
+        <button id="EnterButton" onclick="main()">➤</button>  <!-- A button to submit user input to chatbot -->
+    </div>
+
+    <script src="logic.js"></script>   <!-- A script element that links to a JavaScript file with the logic of the chatbot -->
+</body>                               
+</html>                               
